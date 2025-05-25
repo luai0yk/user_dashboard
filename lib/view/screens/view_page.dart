@@ -18,6 +18,13 @@ class ViewUsersPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back_rounded,
+            color: Colors.white,
+          ),
+          onPressed: () => Get.back(),
+        ),
         actions: [
           IconButton(
             onPressed: () {
@@ -50,7 +57,13 @@ class ViewUsersPage extends StatelessWidget {
         },
         builder: (controller) {
           return readController.isLoading
-              ? const Center(child: CircularProgressIndicator())
+              ? Center(
+                  child: CircularProgressIndicator(
+                    color: Colors.indigo[200],
+                    strokeWidth: 8,
+                    backgroundColor: Colors.indigo,
+                  ),
+                )
               : readController.users.isEmpty
                   ? const Center(
                       child: Text(

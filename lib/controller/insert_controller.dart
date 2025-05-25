@@ -4,13 +4,11 @@ import 'package:get/get.dart';
 import '../core/constant/api_links.dart';
 import '../core/services/api_services.dart';
 import '../model/user_model.dart';
-import 'read_controller.dart';
 
 class InsertController extends GetxController {
   final TextEditingController nameController = TextEditingController();
   final TextEditingController ageController = TextEditingController();
   final GlobalKey<FormState> formState = GlobalKey<FormState>();
-  // final ReadController readController = Get.find<ReadController>();
   bool isLoading = false;
 
   @override
@@ -37,8 +35,6 @@ class InsertController extends GetxController {
         );
 
         if (response != null && response['status'] == 'success') {
-          // Refresh the user list after insertion
-          // await readController.readData();
           Get.back();
           Get.snackbar('Success', 'User inserted successfully');
           nameController.clear();
