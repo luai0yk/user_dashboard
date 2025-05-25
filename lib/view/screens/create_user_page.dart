@@ -6,8 +6,8 @@ import '../../controller/insert_controller.dart';
 import '../../core/utils/validator.dart';
 import '../widget/custom_form_field.dart';
 
-class InsertPage extends StatelessWidget {
-  InsertPage({super.key});
+class CreateUserPage extends StatelessWidget {
+  CreateUserPage({super.key});
 
   final InsertController insertController = Get.find<InsertController>();
 

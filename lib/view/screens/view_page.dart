@@ -3,13 +3,12 @@ import 'package:get/get.dart';
 import 'package:php_api/controller/delete_controller.dart';
 import 'package:php_api/controller/insert_controller.dart';
 import 'package:php_api/controller/read_controller.dart';
-import 'package:php_api/view/screens/update_page.dart';
+import 'package:php_api/core/routes/app_routes.dart';
 
 import '../../model/user_model.dart';
-import 'create_user_page.dart';
 
-class ViewPage extends StatelessWidget {
-  ViewPage({super.key});
+class ViewUsersPage extends StatelessWidget {
+  ViewUsersPage({super.key});
 
   final InsertController insertController = Get.find<InsertController>();
   final ReadController readController = Get.find<ReadController>();
@@ -22,7 +21,7 @@ class ViewPage extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              Get.to(InsertPage())!.then(
+              Get.toNamed(AppRoutes.createUser)!.then(
                 (_) async {
                   await readController.readData();
                 },
@@ -78,7 +77,8 @@ class ViewPage extends StatelessWidget {
                             color: Colors.indigo,
                           ),
                           onTap: () {
-                            Get.to(UpdatePage(), arguments: user)!.then(
+                            Get.toNamed(AppRoutes.updateUser, arguments: user)!
+                                .then(
                               (_) async {
                                 await readController.readData();
                               },

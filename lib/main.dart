@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:php_api/core/binding/controller_binding.dart';
+import 'package:php_api/core/routes/app_pages.dart';
+import 'package:php_api/core/routes/app_routes.dart';
 import 'package:php_api/view/screens/view_page.dart';
 
 void main() {
@@ -22,7 +24,9 @@ class MyApp extends StatelessWidget {
           selectionHandleColor: Colors.indigo,
         ),
       ),
-      home: ViewPage(),
+      getPages: AppPages.routes,
+      initialRoute: AppRoutes.viewUsers,
+      home: ViewUsersPage(),
     );
   }
 }

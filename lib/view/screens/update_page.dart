@@ -7,8 +7,8 @@ import 'package:php_api/view/widget/custom_button.dart';
 import '../../model/user_model.dart';
 import '../widget/custom_form_field.dart';
 
-class UpdatePage extends StatelessWidget {
-  UpdatePage({super.key});
+class UpdateUserPage extends StatelessWidget {
+  UpdateUserPage({super.key});
 
   final UpdateController updateController = Get.find<UpdateController>();
 

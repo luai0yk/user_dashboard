@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-class ApiServices {
+abstract class ApiServices {
   static postRequest({required String url, required Map data}) async {
     try {
       var response = await http.post(Uri.parse(url), body: data);
