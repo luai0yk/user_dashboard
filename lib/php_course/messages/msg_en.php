@@ -1,0 +1,20 @@
+<?php
+return [
+    "$add_success" => "User added successfully",
+    "$duplicate" => "This name already exists.",
+    "$error" => "An error occurred.",
+    "$missing" => "Name and age are required.",
+    "$invalid_age" => "Invalid age value.",
+    "$missing_name" => "Name is required.",
+    "$missing_age" => "Age is required.",
+    "$missing_id" => "User ID is required.",
+    "$update_failed" => "User could not be updated.",
+    "$delete_success" => "User deleted successfully.",
+    "$delete_failed" => "User could not be deleted.",
+    "$users_retrieved" => "Users retrieved successfully.",
+    "$update_column_not_found" => "Update failed: column not found.",
+    "$update_table_not_found" => "Update failed: table not found.",
+    "$update_invalid_param" => "Update failed: invalid parameter.",
+    "$update_unknown_error" => "Update failed: unknown error.",
+    "$update_sucess" => "User updated successfully.",
+];

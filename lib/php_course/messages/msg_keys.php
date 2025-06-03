@@ -1,0 +1,19 @@
+<?php
+$success = 'success';
+$add_success = 'add_success';
+$duplicate = 'duplicate';
+$error = 'error';
+$missing = 'missing';
+$invalid_age = 'invalid_age';
+$missing_name = 'missing_name';
+$missing_age = 'missing_age';
+$missing_id = 'missing_id';
+$update_failed = 'update_failed';
+$delete_success = 'delete_success';
+$delete_failed = 'delete_failed';
+$users_retrieved = 'users_retrieved';
+$update_column_not_found = 'update_column_not_found';
+$update_table_not_found = 'update_table_not_found';
+$update_invalid_param = 'update_invalid_param';
+$update_unknown_error = 'update_unknown_error';
+$update_sucess = 'update_sucess';
